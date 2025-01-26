@@ -1,0 +1,86 @@
+{
+  "chessboard": [
+    {
+      "id": "b101",
+      "piece": "rook",
+      "colour": "white",
+      "position": "a1"
+    },
+    {
+      "id": "b102",
+      "piece": "knight",
+      "colour": "white",
+      "position": "b1"
+    },
+    {
+      "id": "b103",
+      "piece": "bishop",
+      "colour": "white",
+      "position": "c1"
+    },
+    {
+      "id": "b104",
+      "piece": "queen",
+      "colour": "white",
+      "position": "d1"
+    },
+    {
+      "id": "b105",
+      "piece": "king",
+      "colour": "white",
+      "position": "e1"
+    },
+    {
+      "id": "b106",
+      "piece": "bishop",
+      "colour": "white",
+      "position": "f1"
+    },
+    {
+      "id": "b107",
+      "piece": "knight",
+      "colour": "white",
+      "position": "g1"
+    },
+    {
+      "id": "b108",
+      "piece": "rook",
+      "colour": "white",
+      "position": "h1"
+    },
+    {
+      "position": "a3",
+      "id": "b201"
+    },
+    {
+      "id": "b202",
+      "piece": "pawn",
+      "colour": "white",
+      "position": "b2"
+    },
+    {
+      "id": "b301",
+      "piece": "",
+      "colour": "",
+      "position": ""
+    },
+    {
+      "id": "b702",
+      "piece": "pawn",
+      "colour": "black",
+      "position": "b7"
+    },
+    {
+      "id": "b801",
+      "piece": "rook",
+      "colour": "black",
+      "position": "a8"
+    },
+    {
+      "id": "b805",
+      "piece": "king",
+      "colour": "black",
+      "position": "e8"
+    }
+  ]
+}
