@@ -529,14 +529,24 @@ document.querySelectorAll('.box').forEach(ee => {
       }
   })
 })
-
-fetch("http://localhost:5500/api/db.json/turn", {
-    method: "PATCH",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ value: "black" }) 
-})
-.then(response => response.json())
-.then(data => console.log("Updated board state:", data))
-.catch(error => console.error("Error:", error));
+const fetchChessboard = async () => {
+    const response = await fetch('http://localhost:3000/chessboard');
+    const data = await response.json();
+    console.log(data);
+  };
+  fetchChessboard();
+  const updatePiecePosition = async (id, newPosition) => {
+    const response = await fetch(`http://localhost:3000/chessboard/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ position: newPosition }),
+    });
+  
+    if (response.ok) {
+      console.log(`Piece ${id} updated to position ${newPosition}`);
+    } else {
+      console.error('Error updating piece:', response.status);
+    }
+  };
+  updatePiecePosition('b201', 'a3');
+  
